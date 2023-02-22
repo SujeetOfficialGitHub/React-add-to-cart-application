@@ -1,0 +1,43 @@
+.meal-container{
+    width: 25rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+.meal-img{
+    /* width: 20rem; */
+    height: 20rem;
+}
+.meal-img img{
+    width: 100%;
+    height: 100%;
+}
+.meal-content{
+    padding: 1rem 0rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.meal-title{
+    font-size: 2rem;
+}
+.meal-desc{
+    font-size: 1.4rem;
+}
+.meal-price{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.add-cart-btn button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: 2rem;
+    padding: .5rem 2rem;
+    cursor: pointer;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: red;
+    color: white;
+}
