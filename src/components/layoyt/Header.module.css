@@ -1,0 +1,41 @@
+.header{
+    background-color: rgba(219, 5, 5, 0.863);
+    display: flex;
+    justify-content: space-between;
+    padding: 0rem 9%;
+    align-items: center;
+    height: 7rem;
+}
+.logo{
+    font-size: 3rem;
+    color: white;
+}
+.header-cart-btn{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: .5rem 2rem;
+    /* width: 20rem; */
+    border-radius: 4rem;
+    cursor: pointer;
+    background: rgba(47, 2, 2, 0.473);
+}
+
+.header-cart-icon{
+    width: 5rem;
+    height: 3rem;
+}
+.header-cart-btn span{
+    font-size: 1.5rem;
+    padding: 0rem 1rem;
+}
+.header-cart-btn span:last-child{
+    background: red;
+    padding: 1rem;
+    border-radius: 10rem;
+}
+.main-img img{
+    width: 100vw;
+    height: 30rem;
+}
