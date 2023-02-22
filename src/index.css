@@ -5,6 +5,7 @@
 }
 html{
   font-size: 62.5%;
+  min-width: 550px;
 }
 body {
   margin: 0;
