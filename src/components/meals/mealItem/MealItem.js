@@ -1,9 +1,20 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import Card from '../../ui/Card'
 import classes from './MealItem.module.css'
-
+import MealItemForm from './MealItemForm'
+import CartContext from '../../../store/cart-context'
 
 const MealItem = (props) => {
+  const cartCtx = useContext(CartContext)
+  const addToCartHandler = (qty) => {
+    cartCtx.addItem({
+      id : props.id,
+      image : props.image,
+      title : props.title,
+      qty : qty,
+      price : props.price
+    })
+  }
   return (
     <>
     <Card className={classes['meal-container']}>
@@ -15,9 +26,8 @@ const MealItem = (props) => {
             <p className={classes['meal-desc']}>{props.description}</p>
             <p className={classes['meal-price']}>Rs{props.price}</p>
         </div>
-        <div className={classes['add-cart-btn']}>
-            <button>+ Add</button>
-        </div>
+        {/* MealItemForm for Qty and add to cart button  */}
+        <MealItemForm onAddItemToCart={addToCartHandler} />
     </Card>
     </>
   )

@@ -1,0 +1,28 @@
+.qty-form{
+    display: flex;
+    justify-content: space-between;
+}
+.qty-form input{
+    width: 10rem;
+    padding: .5rem;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.qty-form button{
+    width: 10rem;
+    padding: .5rem;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.qty-form button:hover{
+    background: red;
+    color: white;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}

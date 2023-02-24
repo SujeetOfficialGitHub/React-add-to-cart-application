@@ -13,31 +13,18 @@
 }
 .meal-content{
     padding: 1rem 0rem;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    height: 12rem;
 }
 .meal-title{
     font-size: 2rem;
 }
 .meal-desc{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 1.4rem;
 }
 .meal-price{
     font-size: 1.8rem;
     font-weight: bold;
-}
-.add-cart-btn button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    font-size: 2rem;
-    padding: .5rem 2rem;
-    cursor: pointer;
-    border-radius: 10px;
-}
-button:hover{
-    background-color: red;
-    color: white;
 }
