@@ -1,9 +1,16 @@
-import React, {useReducer} from 'react';
+import React, {useEffect, useReducer} from 'react';
 import CartContext from "./cart-context"
 
+const localCartData = localStorage.getItem('cart')
+        ? JSON.parse(localStorage.getItem('cart')) : []
+
+const totalAmount = localCartData.reduce((initilVal, currEle) => {
+    return initilVal + (currEle.price * currEle.qty)
+},0)
+
 const defaultCartState = {
-    items : [],
-    totalAmount : 0
+    items : localCartData,
+    totalAmount : totalAmount
 }
 const cartReducer = (state, action) => {
     if (action.type === 'ADD'){
@@ -61,6 +68,11 @@ const CartProvider = (props) => {
     const removeItemFromCartHandler = (id) => {
         dispatchCartAction({type:'REMOVE', id:id})
     }
+
+    useEffect(() => {
+        localStorage.setItem('cart', JSON.stringify(cartState.items))
+    })
+
     const cartContext = {
         items : cartState.items,
         totalAmount : cartState.totalAmount,
