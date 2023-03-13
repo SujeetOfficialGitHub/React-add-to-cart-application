@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
 import './App.css';
-import Header from './components/layoyt/Header';
+import Header from './components/layout/Header';
 import Meals from './components/meals/Meals';
 import Cart from './components/cart/Cart';
 import CartProvider from './store/CartProvider';
+import Footer from './components/layout/Footer';
 
 function App() {
   const [cartIsShown, setCartIsShon] = useState(false);
@@ -21,6 +22,7 @@ function App() {
         <main>
             <Meals />
         </main>
+        <Footer />
    </CartProvider>
   );
 }

@@ -1,0 +1,19 @@
+.footer{
+    width: 100%;
+    background: red;
+    color: white;
+}
+.footer-container{
+    margin: auto;
+    max-width: 120rem;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: auto auto auto auto;
+    padding: 30px;
+    
+}
+.footer-box p{
+    font-size: 14px;
+    margin: .7rem 0rem;
+}
+

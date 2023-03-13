@@ -1,6 +1,6 @@
 .header{
-    position: fixed;
-    left: 0; top: 0; right: 0;
+    position: sticky;
+    /* left: 0; top: 0; right: 0; */
     background-color: rgba(219, 5, 5);
     display: flex;
     justify-content: space-between;
